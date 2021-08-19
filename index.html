@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--CSS-->
+  <link rel="stylesheet" href="./index.css">
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="PING">
+
+    <article>
+      <h1>We are launching <b>soon!</b> </h1>
+      <p>Subscribe and get notified</p>
+    </article>
+  </header>
+
+  <main>
+    <section id="submitEmail">
+      <form action="">
+        <label for="email">your email here</label>
+        <input 
+          type="email" 
+          id="email"
+          placeholder="Your email address..."
+          required >
+
+        <input 
+          type="submit"
+          onclick="emailVerifier()" 
+          value="Notify Me">
+      </form>
+
+      <p id="invalid-text">Please provide a valid email address</p>
+    </section>
+
+    <section id="illustration">
+      <img src="./images/illustration-dashboard.png" alt="">
+    </section>
+  </main>
+
+  <footer>
+    <div class="socialMedias">
+      <img src="https://image.flaticon.com/icons/png/512/174/174848.png" alt="">
+      <img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="">
+      <img src="https://image.flaticon.com/icons/png/512/174/174876.png" alt="">
+    </div>
+
+    <div class="copyright">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="index.js"></script>
+</body>
+</html>

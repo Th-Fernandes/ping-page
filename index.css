@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+
+    width: min(100rem, 90%); 
+    height: 100vh;
+    padding: 5vh 0;   
+    margin: auto;
+}
+/*=== HEADER == */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.8rem;
+    font-weight: 400;
+    color: rgb(192, 192, 192);
+    margin: 3rem 0 1.5rem;
+}
+
+header h1 b {
+    color: black;
+}
+
+header p {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+/* FORM SECTION */
+section#submitEmail {
+    margin: 3rem 0 5rem;
+}
+
+section#submitEmail form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+section#submitEmail form label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+section#submitEmail form input {
+    padding: 1.2rem 1rem;
+    border-radius: 32px;
+    margin: 0 1rem;
+
+    font-weight: 600;
+}
+section#submitEmail form input::placeholder {
+    color: hsl(0, 0%, 59%);
+    opacity: 0.5;
+}
+
+section#submitEmail form input[type="email"] {
+    border: 1px solid hsl(0, 0%, 59%);
+    width: 60%;
+}
+
+
+section#submitEmail form input[type="submit"] {
+    background: hsl(223, 87%, 63%);
+    width: 30%;
+    border: none;
+    color: white;
+
+    transition: 0.5s all;
+}
+
+section#submitEmail form input[type="submit"]:hover {
+    transition: 0.5s all;
+    transform: scale(1.025);
+    filter: brightness(1.5);
+}
+
+section#submitEmail p {
+    display: none;
+}
+
+section#submitEmail p.invalid {
+    display: block;
+
+    width: 55rem;
+    margin: .5rem auto 0;
+    color: red;
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+
+/* IMAGE SECTION */
+section#illustration  img {
+    width: min(100%, 60rem);
+    display: block;
+    margin: 0 auto;
+}
+/* FOOTER */
+footer {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+footer .socialMedias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 5rem;
+}
+
+footer .socialMedias img:first-child {
+    margin: 0;
+}
+
+footer .socialMedias img {
+    width: 3.5rem;
+    margin-left: 2.5rem;
+}
+
+footer .copyright p {
+    font-size: 1.6rem;
+    opacity: 0.6;
+}
+
+@media(max-width: 600px) {
+    /*HEader*/
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    header p {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color:hsl(0, 0%, 59%);
+    }
+    /* submit section */
+    section#submitEmail form{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    section#submitEmail form input[type="email"] {
+        margin-bottom: 1rem;
+    }
+
+    section#submitEmail form input[type="email"], 
+    section#submitEmail form input[type="submit"] {
+        width: 100%;
+    }
+    /* footer */
+    footer .socialMedias {
+        margin: 15rem 0 5rem;
+    }
+}
